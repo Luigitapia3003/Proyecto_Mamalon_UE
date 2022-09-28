@@ -28,6 +28,15 @@ void AMyCharacterLuigi::Dummy()
 {
 
 }
+void AMyCharacterLuigi ::mamama()
+{
+
+}
+
+void AMyCharacterLuigi::ImprimePantalla()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Purple, TEXT("Funciona"));
+}
 // Called to bind functionality to input
 void AMyCharacterLuigi::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {

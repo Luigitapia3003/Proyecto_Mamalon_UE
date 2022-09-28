@@ -15,13 +15,19 @@ public:
 	// Sets default values for this character's properties
 	AMyCharacterLuigi();
 	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	int life;
+		int life;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float ah;
+	UFUNCTION(BlueprintCallable, category = "Test")
+		void mamama();
+	UFUNCTION(BlueprintCallable, category = "Texto")
+		void ImprimePantalla();
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
