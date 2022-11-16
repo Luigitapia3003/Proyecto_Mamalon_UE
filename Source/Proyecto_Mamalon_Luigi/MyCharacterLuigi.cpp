@@ -23,6 +23,7 @@ void AMyCharacterLuigi::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+
 }
 void AMyCharacterLuigi::Dummy()
 {
@@ -41,6 +42,7 @@ void AMyCharacterLuigi::ImprimePantalla()
 void AMyCharacterLuigi::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
 
 }
 
